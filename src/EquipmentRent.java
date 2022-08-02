@@ -1,6 +1,6 @@
 import java.util.Calendar;
 
-public class RentEquipment {
+public class EquipmentRent {
 	
 	String userName;
 	Calendar rentDate;

@@ -1,6 +1,6 @@
 import java.util.Calendar;
 
-public class ReturnEquipment {
+public class EquipmentReturn {
 	String userName;
 	Calendar checkInDate;
 	String classId;
