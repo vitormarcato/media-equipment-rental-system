@@ -1,13 +1,19 @@
 
-public class SchoolEquipment {
+public class Equipment {
+	
 	private String equipmentDescription;
 	private static int equipmentId = 0;
 	private String equipmentName;
-	private boolean rentStatus = false;
-	private boolean operationStatus = true;
+	private boolean rentStatus = false; //true = not available | false = available
+	private boolean operationStatus = true; //true = working well  false = not working
 	
-	public SchoolEquipment(){
-		SchoolEquipment.equipmentId++;
+	
+	public Equipment(){
+		Equipment.equipmentId++;
+	}
+	
+	public int getEquipmentId() {
+		return equipmentId;
 	}
 	
 	public boolean getRentStatus() {
@@ -18,6 +24,8 @@ public class SchoolEquipment {
 		this.rentStatus = rentStatus;
 	}
 
+	
+	
 	public boolean getOperationStatus() {
 		return operationStatus;
 	}
@@ -27,12 +35,14 @@ public class SchoolEquipment {
 	}
 	
 	
+	
 	public String getEquipmentName() {
 		return equipmentName;
 	}
 	public void setEquipmentName(String equipmentName) {
 		this.equipmentName = equipmentName;
 	}
+	
 	
 	public String getEquipmentDescription() {
 		return equipmentDescription;
@@ -41,8 +51,5 @@ public class SchoolEquipment {
 		this.equipmentDescription = equipmentDescription;
 	}
 	
-	public int getEquipmentId() {
-		return equipmentId;
-	}
 }
 	
