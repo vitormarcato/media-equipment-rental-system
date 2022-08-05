@@ -1,32 +1,25 @@
 
 public class Equipment {
 	
-	private String equipmentDescription;
-	private static int equipmentId = 0;
+	private static int equipmentId = -1;
 	private String equipmentName;
-	private boolean rentStatus = false; //true = not available | false = available
-	private boolean operationStatus = true; //true = working well  false = not working
+	private boolean availableForRent = true;
 	
-	
-	public Equipment(){
+	public Equipment(String equipmentName){
 		Equipment.equipmentId++;
+		this.isAvailableForRent();
+		this.setEquipmentName(equipmentName);
 	}	
+	
+	public void registersuccessfull() {
+		if (equipmentName != "") {
+			System.out.println("\nEquipment register successfull");
+			System.out.println("The " + equipmentName + " is ready!");
+		}
+	}	
+	
 	public int getEquipmentId() {
 		return equipmentId;
-	}
-	
-	public boolean getRentStatus() {
-		return rentStatus;
-	}
-	public void setRentStatus(boolean rentStatus) {
-		this.rentStatus = rentStatus;
-	}
-	
-	public boolean getOperationStatus() {
-		return operationStatus;
-	}
-	public void setOperationStatus(boolean operationStatus) {
-		this.operationStatus = operationStatus;
 	}
 	
 	public String getEquipmentName() {
@@ -34,13 +27,14 @@ public class Equipment {
 	}
 	public void setEquipmentName(String equipmentName) {
 		this.equipmentName = equipmentName;
-	}	
-	
-	public String getEquipmentDescription() {
-		return equipmentDescription;
 	}
-	public void setEquipmentDescription(String equipmentDescription) {
-		this.equipmentDescription = equipmentDescription;
+	
+	public boolean isAvailableForRent() {
+		return availableForRent;
+	}
+
+	public void setAvailableForRent(boolean availableForRent) {
+		this.availableForRent = availableForRent;
 	}
 	
 }

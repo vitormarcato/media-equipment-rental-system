@@ -3,39 +3,30 @@ import java.util.Scanner;
 public class App {
 
 	public static void main(String[] args) {
+
+		WelcomeDisplay PrintFirstScreen = new WelcomeDisplay();
+		PrintFirstScreen.welcomeDisplay();
+
 		Scanner sc = new Scanner(System.in);
-
-		System.out.println("____________________________________________");
-		System.out.println("# Welcome to Media Equipment Rental System #");
-		System.out.println("____________________________________________");
-		System.out.println("# Please, choose an option #");
-		System.out.println("1 - show equipment list");
-		System.out.println("2 - order equipment");
-		System.out.println("3 - return equipment");
-		System.out.println("4 - register new equipment");
-
-		int userInicialInput = (Integer.parseInt(sc.nextLine()));
-
-		if (userInicialInput == 4) {
-
-			System.out.print("equipment name: ");
-			Equipment RegisterNewEquipment = new Equipment();
-			String inputEquipmentName = sc.nextLine();
-			RegisterNewEquipment.setEquipmentName(inputEquipmentName);
-
-			System.out.print("equipment description: ");
-			String inputEquipmentDescription = sc.nextLine();
-			RegisterNewEquipment.setEquipmentDescription(inputEquipmentDescription);
+		int userInicialInput;
+		userInicialInput = Integer.parseInt(sc.nextLine());
+		
+		if (userInicialInput == 1) {
 			
-			if(inputEquipmentName != "") {
-			System.out.println("\n Equipment register successfull");
-			System.out.println("\n Name: " + inputEquipmentName);
-			System.out.println("\n Description: " + inputEquipmentDescription);
-			}else {
-				System.out.println("Please, try again.");
-			}
+		} else if (userInicialInput == 2) {
 			
+		} else if (userInicialInput == 3) {
+
+		} else if (userInicialInput == 4) {
+			
+			RegisterNewEquipment optionfour = new RegisterNewEquipment();
+			optionfour.registerNewEquipment();
+
+		} else if (userInicialInput == 0) {
+			System.exit(0);
+		} else {
+			System.out.println("Please, try again.");
 		}
-
+		sc.close();
 	}
 }
