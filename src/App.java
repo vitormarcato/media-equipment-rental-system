@@ -20,17 +20,17 @@ public class App {
 
 			System.out.print("equipment name: ");
 			Equipment RegisterNewEquipment = new Equipment();
-			String inputEquipmentName = (sc.nextLine());
+			String inputEquipmentName = sc.nextLine();
 			RegisterNewEquipment.setEquipmentName(inputEquipmentName);
 
 			System.out.print("equipment description: ");
-			String inputEquipmentDescription = (sc.nextLine());
+			String inputEquipmentDescription = sc.nextLine();
 			RegisterNewEquipment.setEquipmentDescription(inputEquipmentDescription);
 			
 			if(inputEquipmentName != "") {
-			System.out.println("Equipment register successfull");
-			System.out.println("Name: " + inputEquipmentName);
-			System.out.println("Description: " + inputEquipmentDescription);
+			System.out.println("\n Equipment register successfull");
+			System.out.println("\n Name: " + inputEquipmentName);
+			System.out.println("\n Description: " + inputEquipmentDescription);
 			}else {
 				System.out.println("Please, try again.");
 			}

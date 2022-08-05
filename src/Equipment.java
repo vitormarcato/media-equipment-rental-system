@@ -10,8 +10,7 @@ public class Equipment {
 	
 	public Equipment(){
 		Equipment.equipmentId++;
-	}
-	
+	}	
 	public int getEquipmentId() {
 		return equipmentId;
 	}
@@ -19,30 +18,23 @@ public class Equipment {
 	public boolean getRentStatus() {
 		return rentStatus;
 	}
-
 	public void setRentStatus(boolean rentStatus) {
 		this.rentStatus = rentStatus;
 	}
-
-	
 	
 	public boolean getOperationStatus() {
 		return operationStatus;
 	}
-
 	public void setOperationStatus(boolean operationStatus) {
 		this.operationStatus = operationStatus;
 	}
-	
-	
 	
 	public String getEquipmentName() {
 		return equipmentName;
 	}
 	public void setEquipmentName(String equipmentName) {
 		this.equipmentName = equipmentName;
-	}
-	
+	}	
 	
 	public String getEquipmentDescription() {
 		return equipmentDescription;

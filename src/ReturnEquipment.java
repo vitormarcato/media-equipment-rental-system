@@ -1,8 +1,9 @@
 import java.util.Calendar;
+import java.util.Date;
 
-public class EquipmentReturn {
+public class ReturnEquipment {
 	String userName;
-	Calendar checkInDate;
+	Calendar returnDate;
 	String classId;
 	boolean damageStatus;
 	
@@ -12,12 +13,15 @@ public class EquipmentReturn {
 	public void setUserName(String userName) {
 		this.userName = userName;
 	}
-	public Calendar getCheckInDate() {
-		return checkInDate;
+	public Calendar getReturnDate() {
+		return returnDate;
 	}
-	public void setCheckInDate(Calendar checkInDate) {
-		this.checkInDate = checkInDate;
+
+	public Calendar setReturDate() {
+		Calendar c = Calendar.getInstance();
+		return this.returnDate = c.getTime();
 	}
+	
 	public String getClassId() {
 		return classId;
 	}
