@@ -3,11 +3,10 @@ public class Equipment {
 	
 	private static int equipmentId = -1;
 	private String equipmentName;
-	private boolean availableForRent = true;
+
 	
 	public Equipment(String equipmentName){
 		Equipment.equipmentId++;
-		this.isAvailableForRent();
 		this.setEquipmentName(equipmentName);
 	}	
 	
@@ -27,14 +26,6 @@ public class Equipment {
 	}
 	public void setEquipmentName(String equipmentName) {
 		this.equipmentName = equipmentName;
-	}
-	
-	public boolean isAvailableForRent() {
-		return availableForRent;
-	}
-
-	public void setAvailableForRent(boolean availableForRent) {
-		this.availableForRent = availableForRent;
 	}
 	
 }
