@@ -21,7 +21,8 @@ public class App {
 			optionTwo.equipmentBooked();
 			
 		} else if (userInicialInput == 3) {
-			
+			ReturnEquipment optionThree = new ReturnEquipment();
+			optionThree.returnEquipment();			
 
 		} else if (userInicialInput == 4) {
 			
