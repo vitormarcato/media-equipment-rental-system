@@ -12,18 +12,22 @@ public class App {
 		
 		if (userInicialInput == 1) {
 			RegisterNewEquipment optionOne = new RegisterNewEquipment();
+			optionOne.registerNewEquipment();
 			optionOne.getListItensOfIventory();
 			optionOne.displayInventory();
 			
 		} else if (userInicialInput == 2) {
-			
+			BookEquipment optionTwo = new BookEquipment();
+			optionTwo.equipmentBooked();
 			
 		} else if (userInicialInput == 3) {
+			
 
 		} else if (userInicialInput == 4) {
 			
 			RegisterNewEquipment optionFour = new RegisterNewEquipment();
-			optionFour.registerNewEquipment();			
+			optionFour.getListItensOfIventory();
+			optionFour.displayInventory();			
 			
 		} else if (userInicialInput == 0) {
 			System.exit(0);

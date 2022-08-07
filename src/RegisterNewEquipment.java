@@ -30,14 +30,11 @@ public class RegisterNewEquipment {
 			System.out.print("\nDo you want to add new equipment? [y/n]");
 			control = sc.nextLine().charAt(0);
 		} while (control == 'y' | control == 'Y');
-
-		for (Equipment i : list) {
-			System.out.println(i.getEquipmentName());
-		}
 		sc.close();
 	}
 
 	public void displayInventory() {
+		System.out.print("\nEquipment List:\n");
 		for (Equipment i : list) {
 			System.out.println(i.getEquipmentName());
 		}
