@@ -1,14 +1,29 @@
-# Media Equipment Rental System
+<h1 align="center">Media Equipment Rental System</h1>
 
-Media equipment rental system for a school.
+<p align="center">A simple java system for media equipment rental management</p>
 
-Features: 
+### Features: 
 
-[] To show a list of all equipments
+- [x] Register new equipments
 
-[] To show rent status for users
+- [x] Book equipments rent
 
-[] Calendar managment
+- [x] Return equipment 
 
-[] Register new equipments 
+- [x] View equipments list 
  
+### Demo
+---
+<img src="https://media.giphy.com/media/MVX9FOVusMgjMP7owi/giphy.gif"/>
+
+### Prerequisites
+---
+  - JDK17 
+  
+### Building and Running
+ ---
+  1. Clone source code  or download .zip file 
+  
+  `git clone https://github.com/vitormarcato/media-equipment-rental-system.git`
+  		  
+  2. Run Java file "App.java"
