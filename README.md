@@ -22,8 +22,10 @@
   
 ### Building and Running
  ---
-  1. Clone source code  or download .zip file 
+  1. Clone source code 
   
   `git clone https://github.com/vitormarcato/media-equipment-rental-system.git`
   		  
+   or download .zip file 
+  
   2. Run Java file "App.java"
