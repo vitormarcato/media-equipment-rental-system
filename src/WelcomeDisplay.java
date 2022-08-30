@@ -2,15 +2,21 @@
 public class WelcomeDisplay {
 
 	public void welcomeDisplay() {
-		System.out.println("____________________________________________");
-		System.out.println("# Welcome to Media Equipment Rental System #");
-		System.out.println("____________________________________________");
-		System.out.println("\n# Please, choose an option #");
-		System.out.println("1 - register new equipment");
-		System.out.println("2 - book equipment");
-		System.out.println("3 - return equipment");
-		System.out.println("4 - show equipment list");
-		System.out.println("0 - exit");
+		String msg = """
+		
+		____________________________________________
+		# Welcome to Media Equipment Rental System #
+		____________________________________________
+		# Please, choose an option #
+		1 - register new equipment
+		2 - book equipment
+		3 - return equipment
+		4 - show equipment list
+		0 - exit
+		
+				""";
+		
+		System.out.println(msg);
 	}
 	
 }
