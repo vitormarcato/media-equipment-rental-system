@@ -1,16 +1,34 @@
-<h1 align="center">Media Equipment Rental System</h1>
+# Media Equipment Rental System
 
-<p align="center">A simple java system for media equipment rental management</p>
+A simple java system for media equipment rental management
+
+### Why
+---
+
+The objective of the project is to practice, study and improve knowledge about programming. No source code is possible to observe some implementations of concepts about:
+
+- Object-oriented programming
+- encapsulation
+- Object arrays
+- Calendar class
+- Do-while loops
+- For each
+- if-else
+- Text blocks
+
+The challenge was to code a back-end application responsible for performing some equipment rental management activities using the knowledge commented before. System functionalities are listed below.
+
 
 ### Features: 
+---
 
-- [x] Register new equipments
+- Register new equipments
 
-- [x] Book equipments rent
+- Book equipments rent
 
-- [x] Return equipment 
+- Return equipment 
 
-- [x] View equipments list 
+- View equipments list 
  
 ### Demo
 ---
